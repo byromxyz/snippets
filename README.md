@@ -1,6 +1,6 @@
 # Snippets
 
-## HTML
+## HTML
 
 ### Basic HTML Template
 
@@ -21,7 +21,7 @@
 
 ## React
 
-### React Component
+### React Component
 
 ```jsx
 import React from "react";

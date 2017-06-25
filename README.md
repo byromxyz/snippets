@@ -21,7 +21,7 @@
 
 ## React
 
-### React Component
+### Basic React Component
 
 ```jsx
 import React from "react";
@@ -34,10 +34,10 @@ class Comp extends React.Component {
 		this.state = {}
 	}
 
-  render() {
+	render() {
 
-  	// ...
-
+		// ...
+		
     return(
     	<div>Content</div>
     );
@@ -63,3 +63,4 @@ const mapDispatchToProps = function(dispatch, ownProps) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Comp);
+```

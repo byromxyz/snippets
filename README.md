@@ -37,11 +37,11 @@ class Comp extends React.Component {
 	render() {
 
 		// ...
-		
-    return(
-    	<div>Content</div>
-    );
-  }
+
+		return(
+			<div>Content</div>
+		);
+	}
 };
 
 Comp.propTypes = {
@@ -49,17 +49,17 @@ Comp.propTypes = {
 };
 
 const mapStateToProps = function(store) {
-  return {
-  	prop: store.location,
-  };
+	return {
+		prop: store.location,
+	};
 }
 
 const mapDispatchToProps = function(dispatch, ownProps) {
-  return {
-    action: function() {
-      // Do something
-    },
-  }
+	return {
+		action: function() {
+			// Do something
+		},
+	}
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Comp);

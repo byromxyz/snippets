@@ -8,9 +8,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Title</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -28,20 +28,20 @@ import React from "react";
 import { connect } from "react-redux";
 
 class Comp extends React.Component {
-	constructor(props) {
-		super(props);
+  constructor(props) {
+    super(props);
 
-		this.state = {}
-	}
+    this.state = {}
+  }
 
-	render() {
+  render() {
 
-		// ...
+    // ...
 
-		return(
-			<div>Content</div>
-		);
-	}
+    return(
+      <div>Content</div>
+    );
+  }
 };
 
 Comp.propTypes = {
@@ -49,17 +49,17 @@ Comp.propTypes = {
 };
 
 const mapStateToProps = function(store) {
-	return {
-		prop: store.location,
-	};
+  return {
+    prop: store.location,
+  };
 }
 
 const mapDispatchToProps = function(dispatch, ownProps) {
-	return {
-		action: function() {
-			// Do something
-		},
-	}
+  return {
+    action: function() {
+      // Do something
+    },
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Comp);

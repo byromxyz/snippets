@@ -19,6 +19,19 @@
 </html>
 ```
 
+## SCSS
+
+### Retina background mixin
+````scss
+$retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)";
+@mixin background-image-retina($file, $type) {
+  background-image: url($file + '.' + $type);
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url($file + '@2x.' + $type);
+  }
+}
+````
+
 ## Javascript
 
 ### Email RegEx

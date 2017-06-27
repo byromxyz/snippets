@@ -8,9 +8,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Title</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -29,25 +29,25 @@
 
 ## React
 
-### React Component
+### Basic React Component
 
 ```jsx
 import React from "react";
 import { connect } from "react-redux";
 
 class Comp extends React.Component {
-	constructor(props) {
-		super(props);
+  constructor(props) {
+    super(props);
 
-		this.state = {}
-	}
+    this.state = {}
+  }
 
   render() {
 
-  	// ...
+    // ...
 
     return(
-    	<div>Content</div>
+      <div>Content</div>
     );
   }
 };
@@ -58,7 +58,7 @@ Comp.propTypes = {
 
 const mapStateToProps = function(store) {
   return {
-  	prop: store.location,
+    prop: store.location,
   };
 }
 
@@ -71,3 +71,6 @@ const mapDispatchToProps = function(dispatch, ownProps) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Comp);
+```
+
+

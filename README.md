@@ -91,6 +91,8 @@ const mapDispatchToProps = function(dispatch, ownProps) {
 export default connect(mapStateToProps, mapDispatchToProps)(Comp);
 ```
 
+## Misc
+
 ### .bash_profile
 ```
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'

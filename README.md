@@ -19,6 +19,39 @@
 </html>
 ```
 
+### Sticky Footer
+
+```html
+<div id="wrap">
+  Content
+</div>
+
+<footer id="footer-main">
+  Footer.
+</footer>
+```
+```scss
+$height-footer: 100px;
+html, body {
+  height: 100%;
+}
+.#wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -1 * $height-footer; 
+}
+#wrap:after {
+  content: "";
+  display: block;
+}
+#footer-main, #wrap:after {
+  height: $height-footer; 
+}
+#footer-main {
+  background: orange;
+}
+```
+
 ## SCSS
 
 ### Retina background mixin

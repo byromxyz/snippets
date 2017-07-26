@@ -35,7 +35,7 @@ $height-footer: 100px;
 html, body {
   height: 100%;
 }
-.#wrap {
+#wrap {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -1 * $height-footer; 

@@ -103,30 +103,30 @@ html, body {
 
 ```scss
 #mobile-menu-toggle {
-          display: block;
-          width: 44px;
-          height: 44px;
-          position: relative;
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: relative;
 
-          .bar {
-            background-color: #000;
-            display: block;
-            width: 20px;
-            height: 2px;
-            border-radius: 100px;
-            position: absolute;
-            top: 22px;
-            right: 12px;
-            transition: all 0.5s;
-            &:first-child {
-              transform: translateY(-6px);
-            }
-          }
+  .bar {
+    background-color: #000;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 22px;
+    right: 12px;
+    transition: all 0.5s;
+    &:first-child {
+      transform: translateY(-6px);
+    }
+  }
 
-          &.x .bar { transform: rotate(45deg); }
-          &.x .bar:first-child { transform: rotate(-45deg) }
-        }
-        ```
+  &.x .bar { transform: rotate(45deg); }
+  &.x .bar:first-child { transform: rotate(-45deg) }
+}
+```
 
 ```js
 $('#mobile-menu-toggle').click(function() {
@@ -154,9 +154,9 @@ $('#mobile-menu-toggle').click(function() {
   
 ```html
 <a href="javascript:void(0)" id="mobile-menu-toggle">
-              <s class="bar"></s>
-              <s class="bar"></s>
-            </a>
+  <s class="bar"></s>
+  <s class="bar"></s>
+</a>
 ```
 
 

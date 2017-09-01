@@ -52,6 +52,114 @@ html, body {
 }
 ```
 
+### Mobile Nav
+
+```scss
+#mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  top: $height-header;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+  padding: 25px;
+
+  &.active {
+    display: block;
+  }
+
+  ul {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &.active {
+      a {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    li {
+      a {
+        display: block;
+        font-size: 24pt;
+        color: #000;
+        text-align: center;
+        padding: 0.25em 0;
+        transition: all .5s;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+  }
+}
+```
+
+```scss
+#mobile-menu-toggle {
+          display: block;
+          width: 44px;
+          height: 44px;
+          position: relative;
+
+          .bar {
+            background-color: #000;
+            display: block;
+            width: 20px;
+            height: 2px;
+            border-radius: 100px;
+            position: absolute;
+            top: 22px;
+            right: 12px;
+            transition: all 0.5s;
+            &:first-child {
+              transform: translateY(-6px);
+            }
+          }
+
+          &.x .bar { transform: rotate(45deg); }
+          &.x .bar:first-child { transform: rotate(-45deg) }
+        }
+        ```
+
+```js
+$('#mobile-menu-toggle').click(function() {
+    $(this).toggleClass('x');
+    $('#mobile-nav-overlay').fadeToggle({
+      done: function() {
+        $('#mobile-nav-overlay ul').toggleClass('active');
+      }
+    });
+  });
+```
+  
+```html
+<div id="mobile-nav-overlay">
+  <ul>
+    <li><a href="#home">About</a></li>
+    <li><a href="#home">Why Join</a></li>
+    <li><a href="#home">Research</a></li>
+    <li><a href="#home">News</a></li>
+    <li><a href="#home">Events</a></li>
+    <li><a href="#home">Online Library</a></li>
+  </ul>
+</div>
+```
+  
+```html
+<a href="javascript:void(0)" id="mobile-menu-toggle">
+              <s class="bar"></s>
+              <s class="bar"></s>
+            </a>
+```
+
+
 ## SCSS
 
 ### Retina background mixin

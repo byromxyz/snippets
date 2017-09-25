@@ -9,11 +9,27 @@
 <html>
 <head>
   <title>Title</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+<div class="skiptocontent"><a href="#maincontent">skip to main content</a></div>
+
+<div class="page-wrap">
+
+<header class='header-main'>
+
+</header>
+
+<div id="maincontent" class='body'>
+
+</div>
+
+</div>
+<footer class='footer-man'>
+
+</footer>
 
 </body>
 </html>

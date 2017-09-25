@@ -8,27 +8,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Title</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Feedr Home Static</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <div class="skiptocontent"><a href="#maincontent">skip to main content</a></div>
-
 <div class="page-wrap">
 
 <header class='header-main'>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <!-- content -->
+        
+      </div>
+    </div>
+  </div>
 
 </header>
 
 <div id="maincontent" class='body'>
 
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
 
-</div>
+        <!-- content -->
+
+      </div>
+    </div>
+  </div>
+
+</div> <!-- .main-content -->
+
+</div> <!-- .page-wrap -->
 <footer class='footer-man'>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        <!-- content -->
 
+      </div>
+    </div>
+  </div>
 </footer>
 
 </body>

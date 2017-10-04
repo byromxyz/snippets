@@ -236,29 +236,29 @@ $('#mobile-menu-toggle').click(function() {
 
 ```jsx
 import React from "react";
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 import { connect } from "react-redux";
+
+const propTypes = {
+  prop: PropTypes.string
+}
+
+const defaultProps = {
+  prop: "value"
+}
 
 class Comp extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {}
   }
 
   render() {
-
-    // ...
-
-    return(
-      <div>Content</div>
-    );
+    return null;
   }
-};
+}
 
-Comp.propTypes = {
-  name: PropTypes.string
-};
+Comp.propTypes = propTypes;
+Comp.defaultProps = defaultProps;
 
 const mapStateToProps = function(store) {
   return {

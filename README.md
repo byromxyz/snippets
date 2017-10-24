@@ -240,11 +240,11 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 const propTypes = {
-  prop: PropTypes.string
+  prop: PropTypes.string,
 }
 
 const defaultProps = {
-  prop: "value"
+  prop: "value",
 }
 
 class Comp extends React.Component {

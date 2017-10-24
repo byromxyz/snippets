@@ -235,9 +235,9 @@ $('#mobile-menu-toggle').click(function() {
 ### Basic React Component
 
 ```jsx
-import React from "react";
-import PropTypes from "prop-types"
-import { connect } from "react-redux";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 const propTypes = {
   prop: PropTypes.string
@@ -260,15 +260,15 @@ class Comp extends React.Component {
 Comp.propTypes = propTypes;
 Comp.defaultProps = defaultProps;
 
-const mapStateToProps = function(store) {
+const mapStateToProps = function mapStateToProps(store) {
   return {
     prop: store.location,
   };
 }
 
-const mapDispatchToProps = function(dispatch, ownProps) {
+const mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   return {
-    action: function() {
+    action: () => {
       // Do something
     },
   }

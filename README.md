@@ -244,7 +244,7 @@ const propTypes = {
 }
 
 const defaultProps = {
-  prop: "value",
+  prop: 'value',
 }
 
 class Comp extends React.Component {
